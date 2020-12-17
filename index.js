@@ -1,9 +1,8 @@
-const express = require('express');
+import registerRoutes from './providers/routeProvider.js';
+import express from 'express';
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.get('/', (req, res) => {
-    res.send({hey: 'donkey'});
-});
+registerRoutes(app);
 
 app.listen(PORT);
