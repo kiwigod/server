@@ -9,7 +9,7 @@ async function readDir(path)
 {
     if (!path.endsWith(sep))
     {
-        path = path += sep;
+        path += sep;
     }
 
     let paths = [];
